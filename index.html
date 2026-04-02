@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CairoGuide - Discover the best cafes, co-working spaces, and entertainment spots in Cairo with a modern design.">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RC38RN6X74"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RC38RN6X74');
+    </script>
+    <title>CairoGuide - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+    <!-- Background Animated Blobs for Glass Effect -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav id="main-nav">
+            <a href="index.html" class="logo">Cairo ✨ Guide</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="places.html">Explore Places</a></li>
+                <li><a href="#" id="theme-toggle" style="font-size: 1.3rem;">🌙</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section (Facade) -->
+        <section class="hero-static">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Welcome to Cairo ✨ Guide</h2>
+                <p>Discover the finest cafes, cutting-edge workspaces, and top entertainment spots in the city.</p>
+                <button class="btn-primary" style="padding: 15px 40px; font-size: 1.2rem; border-radius: 30px; background: var(--primary-color); border:none; color:white; cursor:pointer;" onclick="window.location.href='places.html'">Start Exploring</button>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="glass-panel">
+            <h2 style="text-align:center; color: var(--text-dark); margin-bottom: 30px; font-size: 2.2rem;">What are you looking for today?</h2>
+            
+            <div class="categories" id="categories-section">
+                <!-- Category 1 -->
+                <div class="category-card" onclick="window.location.href='places.html?filter=cafe'">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop" alt="Cafes" class="category-img">
+                    <div class="category-info">
+                        <h3>Top Cafes ☕</h3>
+                        <p>Unique spots for coffee and quiet friends hangouts</p>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="category-card" onclick="window.location.href='places.html?filter=study'">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop" alt="Workspaces" class="category-img">
+                    <div class="category-info">
+                        <h3>Study & Work 💻</h3>
+                        <p>Comfortable Co-working spaces for focus and productivity</p>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="category-card" onclick="window.location.href='places.html?filter=fun'">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=800&auto=format&fit=crop" alt="Entertainment" class="category-img">
+                    <div class="category-info">
+                        <h3>Entertainment 🎡</h3>
+                        <p>Zones for gaming and fun away from study stress</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة 💎 CairoGuide © 2026</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
